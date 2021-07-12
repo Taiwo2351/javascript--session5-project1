@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Viga&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/custom2.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">Hotel (Yellow Pages)</span>
+    </div>
+  </nav>
+
+  <section class="jumbotron">
+    <div class="overlay"></div>
+    <div class="container">
+      <hi class="display-4">Welcome to Hotel (Yellow Pages)</hi>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ut voluptatem soluta odit dolor deserunt quas nostrum! At ex aperiam vero amet eum necessitatibus iusto, cum unde provident vel voluptate!</p>
+      <button class="btn btn-danger">Learn more</button>
+    </div>
+  </section>
+
+
+  <section class="container">
+  
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Temperance Hotel Reservation Form</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos placeat, a laborum quisquam voluptatem modi, impedit esse veniam maxime commodi quod ullam illum quidem accusamus repudiandae tempora incidunt temporibus itaque!</P>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo repellat quis fuga ab, vitae corporis fugiat rerum modi ut nesciunt, reiciendis perspiciatis! Odio, tenetur expedita dolor nisi ratione accusantium cupiditate.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h1>Reservation Form</h1>
+        <form action="#">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" onfocus="changeBgColor(this, 'rgb(187, 211, 228)')" onblur="changeBgColor(this, 'transparent')">
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="arrival">Arrival date</label>
+              <input type="text" id="name" class="form-control" onfocus="changeBgColor(this, 'rgb(187, 211, 228)')" onblur="changeBgColor(this, 'transparent')">
+        </div>
+        
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="depature">Depature date</label>
+              <input type="text" id="name" class="form-control" onfocus="changeBgColor(this, 'rgb(187, 211, 228)')" onblur="changeBgColor(this, 'transparent')">
+        </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="persons">Number of Persons</label>
+          <input type="text" id="name" class="form-control" onfocus="changeBgColor(this, 'rgb(187, 211, 228)')" onblur="changeBgColor(this, 'transparent')">
+        </div>
+
+        <div class="form-group">
+          <img src="images/btn1.png" alt="Submit button image" class="img-fluid"  width="200" onmouseover="changeImage(this, src='images/btn2.png')" onmousedown="changeImage(this, src='images/btn3.png')" onmouseout="changeImage(this, src='images/btn1.png')" onclick="changeImage(this, src='images/btn2.png')">
+        </div>
+      </form>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    function changeBgColor(element, bgColor){
+      element.style.backgroundColor = bgColor;
+    }
+    function changeImage(element, imageDisplay){
+      element.src = imageDisplay;
+    }
+  </script>
+</body>
+</html>
